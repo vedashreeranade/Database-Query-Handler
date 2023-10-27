@@ -1,0 +1,12 @@
+LOAD Student
+LOAD Marks
+LOAD Advisor
+f1 <- SELECT Yrs_of_exp <= 4 FROM Advisor
+f2 <- SELECT Salary > 300000 FROM f1
+f <- PROJECT Adv_Id, Yrs_of_exp FROM f2
+RENAME Adv_Id TO adv_id FROM f
+RENAME Yrs_of_exp TO yrs_of_exp FROM f
+PRINT f
+CLEAR Student
+CLEAR Marks
+CLEAR Advisor

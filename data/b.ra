@@ -1,0 +1,12 @@
+LOAD Student
+LOAD Marks
+LOAD Advisor
+b1 <- SELECT Stud_sex == 1 FROM Student
+b2 <- SELECT Stud_age > 16 FROM b1
+b <- PROJECT Stud_Id, Stud_age FROM b2
+RENAME Stud_Id TO stud_id FROM b
+RENAME Stud_age TO stud_age FROM b
+PRINT b
+CLEAR Student
+CLEAR Marks
+CLEAR Advisor
