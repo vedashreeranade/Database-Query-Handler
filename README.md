@@ -1,8 +1,6 @@
 ## Compilation Instructions
 
-We use ```make``` to compile all the files and create the server executable. To compile
-
-```cd``` into the soure directory (called ```src```)
+We use ```make``` to compile all the files and create the server executable. To compile ```cd``` into the soure directory (called ```src```)
 ```
 cd src
 ```
